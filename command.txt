@@ -1,0 +1,32 @@
+I.Git:
+1. New:
+	git init
+	git add .
+	git commit -m "aaaaaa"
+	git remote add origin "https://github.com/MatthewAuber/Fist_github"
+	git push origin master
+	
+2. update:
+	git add .
+	git push origin master
+
+II. Nodejs
+1. Init package
+		npm init
+2. Library & compiler:
+		npm install --save body-parser@1.19.0 dotenv@8.2.0 ejs@3.1.5 express@4.17.1
+		npm install --save-dev @babel/core@7.12.10 @babel/preset-env@7.12.10 @babel/node@7.12.10 nodemon@2.0.7
+
+III. Xampp
+1. Xampp.
+2. "npm sequelize":
+	2.0. npm install --save-dev sequelize-cli@6.2.0
+	2.1. npm install --save sequelize@6.6.2
+	2.2. "error: cannot be loaded because running scripts is disabled on this system."
+	--> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser 
+	2.3. node_modules/.bin/sequelize init
+	2.4. npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+	2.5 npm install mysql2@2.2.5
+	2.6 npx sequelize-cli db:migrate (create a database)
+	2.7 npx sequelize-cli seed:generate --name demo-user
+	2.8 npx sequelize-cli db:seed:all
